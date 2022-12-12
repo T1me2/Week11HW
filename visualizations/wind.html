@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Add a title here -->
-    <title>cloudiness page</title>
-
+    <title>Wind Speed</title>
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -19,11 +18,27 @@
 
   <body>
     <!-- Start of navbar -->
-    <nav class="navbar navbar-light bg=light">
-      <a href="navbar-brand">HW11</a>
+    <nav class="navbar navbar-light bg-light">
+      <a href="navbar-brand">HW11-Links</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Home</a>
+            <a class="dropdown-item" href="#">Results Comparison</a>
+            <a class="dropdown-item" href="#">Data</a>
+            <a class="dropdown-item" href="#">Cloudiness</a>
+            <a class="dropdown-item" href="#">Humidity</a>
+            <a class="dropdown-item" href="#">Tempature</a>
+            <a class="dropdown-item" href="#">Wind</a>
+          </div>
+      </div>
+
+
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="#" class="nav-link">Cloudiness</a>
+          <!-- <a href="#" class="nav-link">Humidity</a> -->
         </li>
       </ul>
     </nav>
@@ -32,10 +47,16 @@
     <!-- Start of container -->
     <div class = "container">
       <div class="row">
-        <div class="col-md-12">
-          <h1>Cloudiness</h1>
+        <div class="col-md-12 text-center">
+          <h1>Wind Speed</h1>
         </div>
       </div> 
+      <div class="row">
+        <img src="../assets/images/wind_speed.png">
+      </div>
+      <div>
+        <p>This graph shows the comparison of city wind speeds compared to its latitude position. It attempted to see if there was a visual relationship between a city's wind speed and it proximity to the equator. It does not appear to show any relationship</p>
+      </div>
     </div>
 
   
@@ -45,7 +66,8 @@
 
     <!-- End of container -->
 
-    
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
     <!-- Bootstrap CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
