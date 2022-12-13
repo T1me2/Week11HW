@@ -6,8 +6,17 @@ body {
   h1 {
     font-size: 60px;
     background: #5e7aad;
+    color:black;
+    text-align:center
   }
   
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    background-color: aliceblue;
+
+  }
+
   h3 {
-    font-size: 30px;
+    font-size: 11px;
   }
